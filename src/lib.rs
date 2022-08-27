@@ -19,7 +19,7 @@ pub fn app() -> App {
     })
     .insert_resource(ClearColor(Color::rgb(0.2,0.2,0.2)))
     .add_plugins(DefaultPlugins)
-    .add_plugins(WorldInspectorPlugin)
+    .add_plugin(WorldInspectorPlugin::new())
     .add_startup_system(startup)
     .add_startup_system(spawn_basic_scene);
     app
