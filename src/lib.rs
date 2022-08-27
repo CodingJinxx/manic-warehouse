@@ -1,8 +1,10 @@
 use bevy::prelude::*;
+use bevy_inspector_egui::WorldInspectorPlugin;
 
 pub const HEIGHT: f32 = 720.0;
 pub const WIDTH: f32 = 1280.0;
 pub const LAUNCHER_TITLE: &str = "Manic Warehouse";
+
 
 pub fn app() -> App {
     let mut app = App::new();
@@ -17,6 +19,7 @@ pub fn app() -> App {
     })
     .insert_resource(ClearColor(Color::rgb(0.2,0.2,0.2)))
     .add_plugins(DefaultPlugins)
+    .add_plugins(WorldInspectorPlugin)
     .add_startup_system(startup)
     .add_startup_system(spawn_basic_scene);
     app
@@ -42,7 +45,7 @@ fn spawn_basic_scene(
     commands.spawn_bundle(PbrBundle {
         mesh: meshes.add(Mesh::from(shape::Cube{ size: 1.0})),
         material: materials.add(Color::rgb(0.8, 0.1, 0.1).into()),
-        transform: Transform::from_xyz(0.0,0.5,0.0),
+        transform: Transform::from_xyz(0.0,0.5 ,0.0),
         ..default()
     });
     commands.spawn_bundle(PointLightBundle {
