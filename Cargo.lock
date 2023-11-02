@@ -678,7 +678,7 @@ dependencies = [
  "futures-lite",
  "hex",
  "hexasphere",
- "image 0.24.6",
+ "image 0.24.7",
  "naga",
  "once_cell",
  "parking_lot 0.12.1",
@@ -2090,9 +2090,9 @@ dependencies = [
 
 [[package]]
 name = "image"
-version = "0.24.6"
+version = "0.24.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "527909aa81e20ac3a44803521443a765550f09b5130c2c2fa1ea59c2f8f50a3a"
+checksum = "6f3dfdbdd72063086ff443e297b61695500514b1e41095b6fb9a5ab48a70a711"
 dependencies = [
  "bytemuck",
  "byteorder",
@@ -2104,7 +2104,7 @@ dependencies = [
  "num-traits",
  "png 0.17.7",
  "qoi",
- "tiff 0.8.0",
+ "tiff 0.9.0",
 ]
 
 [[package]]
@@ -2485,7 +2485,7 @@ version = "0.1.0"
 dependencies = [
  "bevy",
  "bevy-inspector-egui",
- "image 0.24.6",
+ "image 0.24.7",
  "winit",
 ]
 
@@ -2525,7 +2525,7 @@ name = "native-launcher"
 version = "0.1.0"
 dependencies = [
  "bevy",
- "image 0.24.6",
+ "image 0.24.7",
  "my-game",
  "winit",
 ]
@@ -3526,9 +3526,9 @@ dependencies = [
 
 [[package]]
 name = "tiff"
-version = "0.8.0"
+version = "0.9.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f17def29300a156c19ae30814710d9c63cd50288a49c6fd3a10ccfbe4cf886fd"
+checksum = "6d172b0f4d3fba17ba89811858b9d3d97f928aece846475bbda076ca46736211"
 dependencies = [
  "flate2",
  "jpeg-decoder 0.3.0",
