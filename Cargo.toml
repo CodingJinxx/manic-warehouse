@@ -28,6 +28,6 @@ opt-level = 3
 
 [dependencies]
 bevy = "0.8.1"
-image = "0.24.8"
+image = "0.24.9"
 winit = "0.26.1"
 bevy-inspector-egui = "0.13.0"
